@@ -9,16 +9,18 @@
     <meta charset="UTF-8">
     <title>Martin Buchan</title>
     <style>
-        html{
-            font-family:'Open Sans', sans-serif;
+        html {
+            font-family: 'Open Sans', sans-serif;
         }
+
         body, html {
             height: 100%;
         }
-        h1{
-        <!-- margin-top:5%; -->
-            font-size:300%;
-            text-align:center;
+
+        h1 {
+        <!-- margin-top: 5 %;
+        --> font-size: 300%;
+            text-align: center;
         }
 
         .parallax {
@@ -45,19 +47,32 @@
             background-size: cover;
         }
 
-        /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
-        @media only screen and (max-device-width: 600px) {
-            .parallax {
-                background-attachment: scroll;
-            }
-            .parallax2 {
-                background-attachment: scroll;
-            }
+        .parallax3 {
+            /* The image used */
+            /*snow*/
+
+            /* Full height */
+            height: 84.5%;
+
+            /* Create the parallax scrolling effect */
+            background: url("https://i.imgur.com/3S8xCyN.jpg") no-repeat fixed center;
+            background-size: cover;
         }
 
-        .burgerMenu{
+        /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+        @media only screen and (max-device-width: 600px) {
+            .parallax .parallax2 .parallax3 {
+                background-attachment: scroll;
+            }
+
+            /*.parallax2 {*/
+            /*background-attachment: scroll;*/
+            /*}*/
+        }
+
+        .burgerMenu {
             position: fixed;
-            width:3%;
+            width: 3%;
             top: 8px;
             left: 16px;
         }
@@ -73,7 +88,7 @@
             background-color: #c0c0c0; /* silver*/
             overflow-x: hidden; /* Disable horizontal scroll */
             padding-top: 60px; /* Place content 60px from the top */
-            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
         }
 
         /* The navigation menu links */
@@ -87,7 +102,7 @@
         }
 
         /* When you mouse over the navigation links, change their color */
-        .sideBar a:hover, .offCanvas a:focus{
+        .sideBar a:hover, .offCanvas a:focus {
             color: #f1f1f1;
         }
 
@@ -104,25 +119,31 @@
             padding: 20px;
         }
 
-        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        /* On smaller screens, where height is less than 450px, change the style of the sidebar
+         (less padding and a smaller font size) */
         @media screen and (max-height: 450px) {
-            .sideBar {padding-top: 15px;}
-            .sideBar a {font-size: 18px;}
+            .sideBar {
+                padding-top: 15px;
+            }
+
+            .sideBar a {
+                font-size: 18px;
+            }
         }
 
-        #about{
-            padding:0 5% 0 5%;
+        #about {
+            padding: 0 5% 0 5%;
             text-align: center;
         }
 
-        #Links{
-            padding:0 5% 0 5%;
+        #Links {
+            padding: 0 5% 0 5%;
             text-align: center;
         }
 
-        .working{
-            text-align:left;
-            padding-left:35%;
+        .working {
+            text-align: left;
+            padding-left: 35%;
         }
 
 
@@ -162,7 +183,8 @@
 <div id="about" style="background-color:white;font-size:36px;">
     My name is Martin, I'm currently a student at NSW TAFE in Ourimbah, studying Cert IV programing.<br>
     <ul class="working">
-        <li>Java</li> <!-- Add links to gitHub maybe?-->
+        <li>Java</li>
+        <li>VB</li>
         <li>JavaScript</li>
         <li>HTML & CSS</li>
     </ul>
@@ -172,15 +194,17 @@
 <div class="parallax2"></div>
 <div id="Links" style="background-color:white;font-size:36px;">
     <ul class="working">
-        <li><a href="https://github.com/Martinbuchan92" target="_blank">GitHub</a></li> <!-- Add links to gitHub maybe?-->
+        <li><a href="https://github.com/Martinbuchan92" target="_blank">GitHub</a></li>
+        <!-- Add links to gitHub maybe?-->
         <li><a href="https://www.linkedin.com/in/martinbuchan92" target="_blank">LinkedIn</a></li>
-        <li><a href="https://drive.google.com/file/d/0BzFoSQwu401AQjBweWh4Q3FNTzA/view?usp=sharing" target="_blank">Resume</a></li>
+        <li><a href="https://drive.google.com/file/d/0BzFoSQwu401AQjBweWh4Q3FNTzA/view?usp=sharing" target="_blank">Resume</a>
+        </li>
     </ul>
 </div>
-<div class="parallax"></div>
-
+<div class="parallax3"></div>
+1
 <div id="footer" style="text-align:center;">
-    Built and maintained by Martin Buchan. All photos by me unless attributed: <a href = "/attribution.html">ImageAttributes</a>
+    Built and maintained by Martin Buchan. All photos by me unless attributed: <a href="/attribution.html">ImageAttributes</a>
 </div>
 </body>
 </html>
