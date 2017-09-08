@@ -23,29 +23,25 @@
 
         .parallax {
             /* The image used */
-            background-image:url("http://i.imgur.com/HHI2Wmx.jpg"); /*mountain*/
+            /*mountain*/
 
             /* Full height */
             height: 84.5%;
 
             /* Create the parallax scrolling effect */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
+            background: url("http://i.imgur.com/HHI2Wmx.jpg") no-repeat fixed center;
             background-size: cover;
         }
 
         .parallax2 {
             /* The image used */
-            background-image:url("http://i.imgur.com/JP66Pfp.jpg"); /*snow*/
+            /*snow*/
 
             /* Full height */
             height: 84.5%;
 
             /* Create the parallax scrolling effect */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
+            background: url("http://i.imgur.com/JP66Pfp.jpg") no-repeat fixed center;
             background-size: cover;
         }
 
@@ -59,7 +55,7 @@
             }
         }
 
-        .burgermenu{
+        .burgerMenu{
             position: fixed;
             width:3%;
             top: 8px;
@@ -67,7 +63,7 @@
         }
 
         /* The side navigation menu */
-        .sidenav {
+        .sideBar {
             height: 100%; /* 100% Full-height */
             width: 0; /* 0 width - change this with JavaScript */
             position: fixed; /* Stay in place */
@@ -81,7 +77,7 @@
         }
 
         /* The navigation menu links */
-        .sidenav a {
+        .sideBar a {
             padding: 8px 8px 8px 32px;
             text-decoration: none;
             font-size: 25px;
@@ -91,12 +87,12 @@
         }
 
         /* When you mouse over the navigation links, change their color */
-        .sidenav a:hover, .offcanvas a:focus{
+        .sideBar a:hover, .offCanvas a:focus{
             color: #f1f1f1;
         }
 
         /* Position and style the close button (top right corner) */
-        .sidenav .closebtn {
+        .sideBar .btnClose {
             position: absolute;
             top: 0;
             font-size: 36px;
@@ -110,21 +106,21 @@
 
         /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
         @media screen and (max-height: 450px) {
-            .sidenav {padding-top: 15px;}
-            .sidenav a {font-size: 18px;}
+            .sideBar {padding-top: 15px;}
+            .sideBar a {font-size: 18px;}
         }
 
         #about{
-            padding:0% 5% 0% 5%;
+            padding:0 5% 0 5%;
             text-align: center;
         }
 
-        #projects{
-            padding:0% 5% 0% 5%;
+        #Links{
+            padding:0 5% 0 5%;
             text-align: center;
         }
 
-        #working{
+        .working{
             text-align:left;
             padding-left:35%;
         }
@@ -132,9 +128,6 @@
 
     </style>
     <script>
-
-        //JavaScript for all site pages goes here
-        "use strict"
 
         /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
         function openNav() {
@@ -154,23 +147,21 @@
 <h1>Martin Buchan</h1>
 <h2 style="text-align:center;">0477034009 - martinbuchan92@gmail.com</h2>
 
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div id="mySidebar" class="sideBar">
+    <a href="javascript:void(0)" class="btnClose" onclick="closeNav()">&times;</a>
     <a href="#">Top</a>
     <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#photos">Photos</a>
-    <a href="#contact">Contact</a>
+    <a href="#Links">Projects</a>
 </div>
 
-<!-- Use any element to open the sidenav -->
-<span onclick="openNav()"><img src="http://i.imgur.com/9su7UUM.png" class="burgermenu"></span> <!-- burger menu -->
+<!-- Use any element to open the sidebar -->
+<span onclick="openNav()"><img src="http://i.imgur.com/9su7UUM.png" class="burgerMenu"></span> <!-- burger menu -->
 
 <div class="parallax"></div>
 
 <div id="about" style="background-color:white;font-size:36px;">
     My name is Martin, I'm currently a student at NSW TAFE in Ourimbah, studying Cert IV programing.<br>
-    <ul id="working">
+    <ul class="working">
         <li>Java</li> <!-- Add links to gitHub maybe?-->
         <li>JavaScript</li>
         <li>HTML & CSS</li>
@@ -179,25 +170,17 @@
 </div>
 
 <div class="parallax2"></div>
-<div id="projects" style="background-color:white;font-size:36px;">
-    I am currently working on:
-    <ul id="working">
-        <li>Java Assignment</li> <!-- Add links to gitHub maybe?-->
-        <li>This website</li>
-        <li>Unit Testing</li>
+<div id="Links" style="background-color:white;font-size:36px;">
+    <ul class="working">
+        <li><a href="https://github.com/Martinbuchan92" target="_blank">GitHub</a></li> <!-- Add links to gitHub maybe?-->
+        <li><a href="https://www.linkedin.com/in/martinbuchan92" target="_blank">LinkedIn</a></li>
+        <li><a href="https://drive.google.com/file/d/0BzFoSQwu401AQjBweWh4Q3FNTzA/view?usp=sharing" target="_blank">Resume</a></li>
     </ul>
-</div>
-<div class="parallax"></div>
-<div id="photos">
-    Some of the photographs I have taken:
-</div>
-<div class="parallax2"></div>
-<div id="contact">
-    --Links to things--
 </div>
 <div class="parallax2"></div>
 
 <div id="footer" style="text-align:center;">
     Built and maintained by Martin Buchan. All photos by me unless attributed: <a href = "/attribution.html">ImageAttributes</a>
 </div>
+</body>
 </html>
