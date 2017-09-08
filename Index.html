@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<!-- 	Martin Buchan
+	Personal Website
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Martin Buchan</title>
+    <style>
+        html{
+            font-family:'Open Sans', sans-serif;
+        }
+        body, html {
+            height: 100%;
+        }
+        h1{
+        <!-- margin-top:5%; -->
+            font-size:300%;
+            text-align:center;
+        }
+
+        .parallax {
+            /* The image used */
+            background-image:url("http://i.imgur.com/HHI2Wmx.jpg"); /*mountain*/
+
+            /* Full height */
+            height: 84.5%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parallax2 {
+            /* The image used */
+            background-image:url("http://i.imgur.com/JP66Pfp.jpg"); /*snow*/
+
+            /* Full height */
+            height: 84.5%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+        @media only screen and (max-device-width: 600px) {
+            .parallax {
+                background-attachment: scroll;
+            }
+            .parallax2 {
+                background-attachment: scroll;
+            }
+        }
+
+        .burgermenu{
+            position: fixed;
+            width:3%;
+            top: 8px;
+            left: 16px;
+        }
+
+        /* The side navigation menu */
+        .sidenav {
+            height: 100%; /* 100% Full-height */
+            width: 0; /* 0 width - change this with JavaScript */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Stay on top */
+            top: 0;
+            left: 0;
+            background-color: #c0c0c0; /* silver*/
+            overflow-x: hidden; /* Disable horizontal scroll */
+            padding-top: 60px; /* Place content 60px from the top */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+        }
+
+        /* The navigation menu links */
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover, .offcanvas a:focus{
+            color: #f1f1f1;
+        }
+
+        /* Position and style the close button (top right corner) */
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            font-size: 36px;
+        }
+
+        /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+        #main {
+            transition: margin-left .5s;
+            padding: 20px;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+
+        #about{
+            padding:0% 5% 0% 5%;
+            text-align: center;
+        }
+
+        #projects{
+            padding:0% 5% 0% 5%;
+            text-align: center;
+        }
+
+        #working{
+            text-align:left;
+            padding-left:35%;
+        }
+
+
+    </style>
+    <script>
+
+        //JavaScript for all site pages goes here
+        "use strict"
+
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+</head>
+<body>
+<h1>Martin Buchan</h1>
+<h2 style="text-align:center;">0477034009 - martinbuchan92@gmail.com</h2>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Top</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#photos">Photos</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()"><img src="http://i.imgur.com/9su7UUM.png" class="burgermenu"></span> <!-- burger menu -->
+
+<div class="parallax"></div>
+
+<div id="about" style="background-color:white;font-size:36px;">
+    My name is Martin, I'm currently a student at NSW TAFE in Ourimbah, studying Cert IV programing.<br>
+    <ul id="working">
+        <li>Java</li> <!-- Add links to gitHub maybe?-->
+        <li>JavaScript</li>
+        <li>HTML & CSS</li>
+    </ul>
+
+</div>
+
+<div class="parallax2"></div>
+<div id="projects" style="background-color:white;font-size:36px;">
+    I am currently working on:
+    <ul id="working">
+        <li>Java Assignment</li> <!-- Add links to gitHub maybe?-->
+        <li>This website</li>
+        <li>Unit Testing</li>
+    </ul>
+</div>
+<div class="parallax"></div>
+<div id="photos">
+    Some of the photographs I have taken:
+</div>
+<div class="parallax2"></div>
+<div id="contact">
+    --Links to things--
+</div>
+<div class="parallax2"></div>
+
+<div id="footer" style="text-align:center;">
+    Built and maintained by Martin Buchan. All photos by me unless attributed: <a href = "/attribution.html">ImageAttributes</a>
+</div>
+</html>
