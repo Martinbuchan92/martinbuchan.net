@@ -131,6 +131,8 @@
         #about {
             padding: 0 5% 0 5%;
             text-align: center;
+            height: 50%;
+
         }
 
         #Links {
@@ -138,12 +140,35 @@
             text-align: center;
         }
 
-        .working {
-            text-align: left;
+        .languages {
+            text-align: right;
             font-size: 25px;
-            padding-left: 35%;
+            padding-right: 5%;
+            list-style: none;
         }
 
+        .technologies {
+            text-align: left;
+            font-size: 25px;
+            padding-left: 5%;
+            list-style: none;
+
+        }
+
+        .Links {
+            text-align: left;
+            font-size: 25px;
+            padding-left: 45%;
+            list-style: none;
+        }
+
+        div.col {
+            float: left;
+            width: 50%;
+            background-color: white;
+            font-size: 30px;
+
+        }
 
     </style>
     <script>
@@ -179,34 +204,65 @@
 <div class="parallax"></div>
 
 <div id="about" style="background-color:white;font-size:30px;">
-    I am Martin. I'm currently a student at TAFE NSW, studying Cert IV programing.<br>
-    <ul class="working">
-        <li>Java</li>
-        <li>Android</li>
-        <li>VB.net</li>
-        <li>MySQL</li>
-        <li>JavaScript</li>
-        <li>HTML & CSS</li>
-        <li>JUnit, MySQL, Android, Git, Github, knowledge of Agile, UML Diagramming, Unit Testing</li>
-    </ul>
+    I'm currently a student at TAFE NSW, studying Cert IV programing.<br>
+    <div class="col">
+        <ul class="languages">
+            <li>Languages:</li>
+            <li>Java</li>
+            <li>Android</li>
+            <li>VB.net</li>
+            <li>MySQL</li>
+            <li>JavaScript</li>
+            <li>HTML & CSS</li>
+            <!--<li>JUnit, MySQL, Android, Git, Github, knowledge of Agile, UML Diagramming, Unit Testing</li>-->
+        </ul>
+    </div>
+    <div class="col">
+        <ul class="technologies">
+            <li>Technologies:</li>
+            <li>JUnit</li>
+            <li>Unit Testing</li>
+            <li>Android</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Agile</li>
+            <li>UML Diagramming</li>
+        </ul>
+    </div>
 
 </div>
 
 <div class="parallax2"></div>
+
 <div id="Links" style="background-color:white;font-size:30px;">
-    <ul class="working">
-        <li><a href="https://github.com/Martinbuchan92" target="_blank">GitHub</a></li>
-        <!-- Add links to gitHub maybe?-->
-        <li><a href="https://www.linkedin.com/in/martinbuchan92" target="_blank">LinkedIn</a></li>
-        <li><a href="https://drive.google.com/file/d/0BzFoSQwu401AQjBweWh4Q3FNTzA/view?usp=sharing" target="_blank">Resume</a>
-        </li>
-        <li><a href="https://twitter.com/martinbuchan92" target="_blank"> Twitter</a></li>
-        <li><a href="https://www.facebook.com/mbuchan" target="_blank"> Facebook</a></li>
-        <li><a href="https://stackoverflow.com/users/7760413/martin-buchan" target="_blank"> StackOverflow</a></li>
+    <ul class="Links">
+
     </ul>
 </div>
+
+<div style="background-color:white;font-size:30px;">
+
+    <div class="col">
+        <ul class="languages">
+            <li><a href="https://github.com/Martinbuchan92" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/martinbuchan92" target="_blank">LinkedIn</a></li>
+            <li><a href="https://drive.google.com/file/d/0BzFoSQwu401AQjBweWh4Q3FNTzA/view?usp=sharing" target="_blank">Resume</a>
+        </li>
+        </ul>
+    </div>
+    <div class="col">
+        <ul class="technologies">
+      <li><a href="https://twitter.com/martinbuchan92" target="_blank"> Twitter</a></li>
+        <li><a href="https://www.facebook.com/mbuchan" target="_blank"> Facebook</a></li>
+        <li><a href="https://stackoverflow.com/users/7760413/martin-buchan" target="_blank"> StackOverflow</a></li>
+
+        </ul>
+    </div>
+
+</div>
+
 <div class="parallax3"></div>
-1
+
 <div id="footer" style="text-align:center;">
     Built and maintained by Martin Buchan. All photos by me unless attributed: <a href="/attribution.html">ImageAttributes</a>
 </div>
