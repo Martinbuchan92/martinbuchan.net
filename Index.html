@@ -18,26 +18,14 @@
         }
 
         h1 {
-         margin-top: 5%;
-        font-size: 300%;
+            margin-top: 5%;
+            font-size: 300%;
             text-align: center;
         }
 
         .parallax {
             /* The image used */
-            /*mountain*/
-
-            /* Full height */
-            height: 84.5%;
-
-            /* Create the parallax scrolling effect */
-            background: url("http://i.imgur.com/HHI2Wmx.jpg") no-repeat fixed center;
-            background-size: cover;
-        }
-
-        .parallax2 {
-            /* The image used */
-            /*snow*/
+            /*Winter*/
 
             /* Full height */
             height: 84.5%;
@@ -47,7 +35,21 @@
             background-size: cover;
         }
 
+        .parallax2 {
+            /* The image used */
+            /*Spring*/
+
+            /* Full height */
+            height: 84.5%;
+
+            /* Create the parallax scrolling effect */
+            background: url("http://i.imgur.com/HHI2Wmx.jpg") no-repeat fixed center;
+            background-size: cover;
+        }
+
         .parallax3 {
+            /* The image used */
+            /*Summer*/
 
             height: 84.5%;
 
@@ -56,9 +58,20 @@
             background-size: cover;
         }
 
+        .parallax4 {
+            /* The image used */
+            /*Autumn*/
+
+            height: 84.5%;
+
+            /* Create the parallax scrolling effect */
+            background: url("https://i.imgur.com/Z8EWTXL.jpg") no-repeat fixed center;
+            background-size: cover;
+        }
+
         /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
         @media only screen and (max-device-width: 600px) {
-            .parallax .parallax2 .parallax3 {
+            .parallax .parallax2 .parallax3 .parallax4{
                 background-attachment: scroll;
             }
 
@@ -127,8 +140,8 @@
 
         #about {
             text-align: center;
-            background-color:white;
-            position:relative;
+            background-color: white;
+            position: relative;
 
         }
 
@@ -154,8 +167,8 @@
             background-color: white;
             font-size: 30px;
 
-
         }
+
         .col2 {
             float: right;
             width: 50%;
@@ -191,10 +204,12 @@
 
 <div id="mySidebar" class="sideBar">
     <a href="javascript:void(0)" class="btnClose" onclick="closeNav()">&times;</a>
-    <img style="width:50%; height:auto; margin-left:10%; border-radius: 25px" src="https://avatars1.githubusercontent.com/u/25278230?v=4&s=400">
+    <img style="width:50%; height:auto; margin-left:10%; border-radius: 25px"
+         src="https://avatars1.githubusercontent.com/u/25278230?v=4&s=400">
     <a href="#">Top</a>
     <a href="#about">About</a>
     <a href="#Links">Links</a>
+    <a href="#resume">Resume</a>
 </div>
 
 <!-- Use any element to open the sidebar -->
@@ -202,8 +217,8 @@
 
 <div class="parallax"></div>
 
-<div id="about" style="font-size:30px;padding-bottom:10%;">
-    I'm currently a student at TAFE NSW, studying Cert IV programing.<br>
+<div id="about" style="font-size:30px;padding-bottom:18%;">
+    <p>I'm currently a student at TAFE NSW, studying Cert IV programing.</p>
     <div class="col">
         <ul class="languages">
             <li>Languages:</li>
@@ -232,13 +247,13 @@
 
 <div class="parallax2"></div>
 
-<div id="Links" style="background-color:white;font-size:30px;">
+<div id="Links" style="background-color:white;font-size:30px;padding-bottom:12%;">
 
     <div class="col">
         <ul class="languages">
             <li><a href="https://github.com/Martinbuchan92" target="_blank">GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/martinbuchan92" target="_blank">LinkedIn</a></li>
-            <li><a href="https://drive.google.com/file/d/0BzFoSQwu401AQjBweWh4Q3FNTzA/view?usp=sharing" target="_blank">Resume</a>
+            <li><a href="https://drive.google.com/file/d/0BzFoSQwu401AUTZ5WHRGX2FOc00/view?usp=sharing" target="_blank">Resume</a>
             </li>
         </ul>
     </div>
@@ -247,16 +262,22 @@
             <li><a href="https://twitter.com/martinbuchan92" target="_blank"> Twitter</a></li>
             <li><a href="https://www.facebook.com/mbuchan" target="_blank"> Facebook</a></li>
             <li><a href="https://stackoverflow.com/users/7760413/martin-buchan" target="_blank"> StackOverflow</a></li>
-
         </ul>
     </div>
 
 </div>
 
-<div class="parallax3"></div>
-
+<div class="parallax3">
+</div>
+<div id="resume" style="font-size:30px;" align="center">
+    <iframe src="https://drive.google.com/file/d/0BzFoSQwu401AUTZ5WHRGX2FOc00/preview" width="75%" height="480" style="padding-bottom:1px;padding-top:1px;" ></iframe>
+</div>
+<div class="parallax4">
+</div>
 <div id="footer" style="text-align:center;">
     Built and maintained by Martin Buchan. All photos by me unless attributed: <a href="/attribution.html">ImageAttributes</a>
 </div>
+
+
 </body>
 </html>
