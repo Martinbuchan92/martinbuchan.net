@@ -1,0 +1,171 @@
+/*Martin Buchan*/
+/*3/10/17*/
+/*Personal Website*/
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+h1 {
+    margin-top: 5%;
+    font-size: 300%;
+    text-align: center;
+}
+
+.parallax {
+    /* The image used */
+    /*Winter*/
+
+    /* Full height */
+    height: 84.5%;
+
+    /* Create the parallax scrolling effect */
+    background: url("http://i.imgur.com/JP66Pfp.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    /*Spring*/
+
+    /* Full height */
+    height: 84.5%;
+
+    /* Create the parallax scrolling effect */
+    background: url("http://i.imgur.com/HHI2Wmx.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
+.parallax3 {
+    /* The image used */
+    /*Summer*/
+
+    height: 84.5%;
+
+    /* Create the parallax scrolling effect */
+    background: url("https://i.imgur.com/3S8xCyN.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
+.parallax4 {
+    /* The image used */
+    /*Autumn*/
+
+    height: 84.5%;
+
+    /* Create the parallax scrolling effect */
+    background: url("https://i.imgur.com/Z8EWTXL.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 600px) {
+    .parallax .parallax2 .parallax3 .parallax4 {
+        background-attachment: scroll;
+    }
+
+}
+
+.burgerMenu {
+    position: fixed;
+    width: 3%;
+    top: 8px;
+    left: 16px;
+}
+
+/* The side navigation menu */
+.sideBar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #c0c0c0; /* silver*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The navigation menu links */
+.sideBar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sideBar a:hover, .offCanvas a:focus {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sideBar .btnClose {
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar
+ (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sideBar {
+        padding-top: 15px;
+    }
+
+    .sideBar a {
+        font-size: 18px;
+    }
+}
+
+#about {
+    text-align: center;
+    background-color: white;
+    position: relative;
+
+}
+
+.languages {
+    text-align: right;
+    font-size: 25px;
+    padding-right: 5%;
+    list-style: none;
+}
+
+.technologies {
+    text-align: left;
+    font-size: 25px;
+    padding-left: 5%;
+    list-style: none;
+
+}
+
+.col {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    font-size: 30px;
+
+}
+
+.col2 {
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    font-size: 30px;
+}
